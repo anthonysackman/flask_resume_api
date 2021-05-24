@@ -3,7 +3,7 @@ Resume Flask API
 
 Location: https://anthony-resume-flask-api.herokuapp.com
 
-This is a basic API using Flask and flask_restful
+This is a basic API using Flask and flask_restful hosted on Heroku
 
 This is a basic API for Houshold Expense tracking
 
