@@ -55,9 +55,11 @@ class Users(Resource):
             data['expenses'] = data['expenses'].apply(
                 lambda x: ast.literal_eval(x)
             )
-
+            # Get user data and expense list, create updated list and replace
             user_data = data[data['userId'] == args['userId']]
-            user_data['expenses'] = user_data['expenses'].values[0].append(args['expenses'])
+            expense_data = list(user_data['expenses'].values[0])
+            expense_data.append(args['expenses'])
+            data.at[(int(args['userId']) - 1), 'expenses'] = expense_data
             data.to_csv('users.csv', index=False)
             return {'data': data.to_dict()}, 200
         else:
