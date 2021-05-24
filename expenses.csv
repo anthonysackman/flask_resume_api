@@ -1,0 +1,9 @@
+expenseId,name,location,date,expense
+1,Groceries,Costco,05/01/21,210.0
+2,Gas,Shell,05/05/21,-35.24
+3,Netflix,Netflix,05/10/21,-17.99
+4,Vet,Vet Office,05/12/21,-150.5
+5,Dining out,Boundary Bay,05/14/21,-64.3
+6,Lottery winnings,State Lottery,05/16/21,3000.0
+7,Baseball tickets,Stadium,05/18/21,-120.24
+8,New computer,Costco,05/20/21,-799.99
